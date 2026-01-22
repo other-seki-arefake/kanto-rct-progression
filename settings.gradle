@@ -1,1 +1,10 @@
-rootProject.name = 'kanto_mod_prueba'
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven {
+            url = "https://maven.neoforged.net/releases"
+        }
+    }
+}
+
+rootProject.name = "kanto-rct-progression"
