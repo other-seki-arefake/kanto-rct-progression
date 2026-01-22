@@ -1,5 +1,7 @@
-
-plugins { id 'java' }
+plugins {
+    id 'java'
+    id 'net.neoforged.gradle.userdev' version '7.0.165'
+}
 
 group = 'dev.kanto'
 version = '0.1.0'
@@ -10,12 +12,12 @@ java {
 
 repositories {
     mavenCentral()
-    maven { url = "https://maven.neoforged.net/releases" }
 }
 
 dependencies {
-    compileOnly files('libs/Cobblemon.jar')
-    compileOnly files('libs/rctmod.jar')
-    compileOnly files('libs/rctapi.jar')
-    compileOnly files('libs/SimpleTMs.jar')
+    implementation "net.neoforged:neoforge:21.1.218"
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
 }
