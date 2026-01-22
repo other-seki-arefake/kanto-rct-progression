@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "kanto:brock_gym",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 300,
+    "separation": 299,
+    "salt": 123456789
+  }
+}
